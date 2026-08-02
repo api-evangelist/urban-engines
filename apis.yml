@@ -1,7 +1,24 @@
 aid: urban-engines
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/urban-engines.png
 name: Urban Engines
-description: Urban Engines is a company surfaced as a portfolio company of a16z, gv and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Urban Engines was a Silicon Valley urban-mobility analytics startup founded by
+  Shiva Shivakumar and Balaji Prabhakar that built a Space/Time Engine for analyzing how
+  people and objects move through cities, powering commuter routing and congestion insights
+  for cities including Washington D.C., Sao Paulo, and Singapore. Backed by a16z and GV, the
+  company was acquired by Google in September 2016 and is now defunct; it published no public
+  API, developer portal, or client packages, and its former website is parked on Google
+  infrastructure.
 url: https://raw.githubusercontent.com/api-evangelist/urban-engines/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +27,20 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct-acquired
+x-acquired-by: Google
+x-acquired-date: '2016-09'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Transportation
+- Urban Mobility
+- Data Analytics
+- Mapping
+- Logistics
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/urban-engines-domain-security.yml
 - type: Website
+  url: https://www.urbanengines.com
+- type: Wikipedia
   url: https://en.wikipedia.org/wiki/Urban_Engines
+- type: GitHubOrganization
+  url: https://github.com/UrbanEngines
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
